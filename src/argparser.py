@@ -14,7 +14,6 @@ class ArgParser():
     def generate_arguments(self):
         self.parser.add_argument('path', type=str, help='Path of the file or directory to backup - Required')
         self.parser.add_argument('dest', type=str, nargs='?', help='Optional destination of the backup, defaults to Desktop', default=get_desktop_path())
-        self.parser.add_argument('-d', '--directory', help='Whether the path is for a directory', action='store_true')
         self.parser.add_argument('-v', '--version', action='version', version='BUCRS 1.0')
         self.parser.add_argument('-t', '--type', help="Compression file format, defaults to tar", nargs="?", default="tar")
     
