@@ -26,7 +26,6 @@ class ArgParser():
 def main():
     parser = ArgParser()
     results = parser.parse_arguments()
-    print(results.dest)
 
 
 if __name__ == '__main__':
